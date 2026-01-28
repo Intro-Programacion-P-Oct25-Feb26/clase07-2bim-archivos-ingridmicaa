@@ -71,12 +71,15 @@ public class LeerArchivoTexto {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split(";"));
                 ArrayList<String> linea_partes = new ArrayList<>(lista);
-                // for (int i = 0; i < linea_partes.size(); i++) {
-                    System.out.println(linea_partes.get(2));
-                // }
+                //for (int i = 0; i < linea_partes.size(); i++) { si quiero toda
+                //la lista es con en for y en get(2)
+                    System.out.println(linea_partes.get(2)); // posicion dede 0 
+                                            //en una lista si quiero imprimir 
+                                            //solo una fila en especifico
+                 }
                 System.out.println("-----------------------------------");
 
-            } // fin de while
+            //} // fin de while
             entrada.close();
         } // fin de try
         catch (Exception e) {
