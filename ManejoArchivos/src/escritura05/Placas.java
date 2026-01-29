@@ -15,13 +15,46 @@ import java.util.Formatter;
  */
 public class Placas {
     
-     public static void loja (String valor) {
+    public static void Loja(String datos) {
         try {
-            FileOutputStream fos = new FileOutputStream("data/PlacasLoja.txt", true); 
+            FileOutputStream fos = new FileOutputStream("data/PlacasLoja.txt", true);
             OutputStreamWriter osw = new OutputStreamWriter(fos);
             Formatter salida = new Formatter(osw);
-            
-            salida.format("%s", valor);
+
+            salida.format("%s", datos);
+            salida.close();
+
+        } catch (Exception e) {
+            System.err.println("Error al crear el archivo de Loja.");
+            System.exit(1);
+
+        }
+
+    }
+
+    public static void Pichincha(String datos) {
+        try {
+            FileOutputStream fos = new FileOutputStream("data/PlacasPichincha.txt", true);
+            OutputStreamWriter osw = new OutputStreamWriter(fos);
+            Formatter salida = new Formatter(osw);
+
+            salida.format("%s", datos);
+            salida.close();
+
+        } catch (Exception e) {
+            System.err.println("Error al crear el archivo de Pichincha.");
+            System.exit(1);
+
+        }
+    }
+
+    public static void Guayas(String datos) {
+        try {
+            FileOutputStream fos = new FileOutputStream("data/PlacasGuayas.txt", true);
+            OutputStreamWriter osw = new OutputStreamWriter(fos);
+            Formatter salida = new Formatter(osw);
+
+            salida.format("%s", datos);
             salida.close();
 
         } catch (Exception e) {
@@ -29,9 +62,24 @@ public class Placas {
             System.exit(1);
 
         }
+    }
 
-    } 
-    
-} 
+    public static void Otros(String datos) {
+        try {
+            FileOutputStream fos = new FileOutputStream("data/PlacasOtros.txt", true);
+            OutputStreamWriter osw = new OutputStreamWriter(fos);
+            Formatter salida = new Formatter(osw);
+
+            salida.format("%s", datos);
+            salida.close();
+
+        } catch (Exception e) {
+            System.err.println("Error al crear el archivo.");
+            System.exit(1);
+
+        }
+    }
+}
+
 
 
