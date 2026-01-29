@@ -22,8 +22,6 @@ public class Principal {
         String cedula = "";
         
 
-        
-
             for (int i = 1; i < 3; i++) {
 
                 System.out.println("Ingrese su cédula");
@@ -36,6 +34,7 @@ public class Principal {
 
                 cadenaFinal = String.format("%s%s %s %s\n", cadenaFinal,
                         cedula, nombre, correo);
+                
                 CrearArchivoTexto.agregarRegistros(cadenaFinal, cedula);
                 cadenaFinal = "";
 

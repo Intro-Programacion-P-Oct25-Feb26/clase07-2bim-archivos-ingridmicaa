@@ -22,7 +22,7 @@ public class CrearArchivoTexto {
         
         String ruta = String.format("data/%s.txt", nombreArchivo);
        
-            try (Formatter salida = new Formatter(ruta) // remplaza
+            try (Formatter salida = new Formatter(ruta) // ruta cadena de todo el archivo
             ) {
                 salida.format("%s", cadena);
             

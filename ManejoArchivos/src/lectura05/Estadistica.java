@@ -23,8 +23,7 @@ public class Estadistica {
             Scanner entrada = new Scanner(new File("data/sucursales.txt"));
 
             while (entrada.hasNext()) {
-                
-                //El ciclo se repite línea por línea hasta que el archivo se termine.
+              
                 
                 try {
                     String linea = entrada.nextLine();
@@ -33,8 +32,7 @@ public class Estadistica {
                         
                         bandera = false;
                         throw new Exception("Primera Línea");
-           //El boolean sirve para saber si estoy leyendo la primera línea.
-//La primera línea no tiene números, entonces la ignoro con una excepción y sigo con las demás.”
+           
 
                     }
 

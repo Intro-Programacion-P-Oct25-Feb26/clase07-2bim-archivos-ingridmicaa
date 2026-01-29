@@ -10,8 +10,8 @@ public class CrearArchivoTexto {
     // agrega registros al archivo
     public static void agregarRegistros(String valor) {
         try {
-            FileOutputStream fos = new FileOutputStream("data/salidaDatosPersonales002.txt", true); // true = append
-            OutputStreamWriter osw = new OutputStreamWriter(fos);
+            FileOutputStream fos = new FileOutputStream("data/salidaDatosPersonales002.txt", true); // true = append siempre vaya entrando y siemplre true
+            OutputStreamWriter osw = new OutputStreamWriter(fos); // agrago mas datos en un archivo 
             Formatter salida = new Formatter(osw);
             
             salida.format("%s", valor);
@@ -31,5 +31,5 @@ public class CrearArchivoTexto {
  * (C) Copyright 1992-2007 por Deitel & Associates, Inc. y                *
  * Pearson Education, Inc. Todos los derechos reservados.                 *
  *                                                                        *
- 
+ nombre
  *************************************************************************/
